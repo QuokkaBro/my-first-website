@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>쿼카브로 | 바이브코더</title>
+
+  <!-- style.css 파일을 연결합니다. 디자인을 바꾸고 싶을 때는 style.css를 수정하세요. -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--
+    초보자 수정 안내:
+    1. 이름, 소개글, 좋아하는 것, 연락처는 이 index.html에서 바꿀 수 있습니다.
+    2. 색상과 전체 디자인은 style.css 위쪽의 :root 부분에서 쉽게 바꿀 수 있습니다.
+    3. 버튼 클릭 메시지는 script.js 위쪽에서 바꿀 수 있습니다.
+  -->
+
+  <header class="hero" id="top">
+    <nav class="navbar" aria-label="주요 메뉴">
+      <a class="logo" href="#top">My Profile</a>
+      <div class="nav-links">
+        <a href="#about">소개</a>
+        <a href="#favorites">좋아하는 것</a>
+        <a href="#contact">연락처</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <!-- 여기에 본인의 이름이나 닉네임을 적으세요. -->
+      <p class="eyebrow">안녕하세요!</p>
+      <h1>저는 <span>쿼카브로</span>입니다.</h1>
+
+      <!-- 여기에 첫 화면에 보여줄 짧은 소개글을 적으세요. -->
+      <p class="hero-description">
+        AI 도구와 웹사이트 만들기를 즐기는 바이브코더입니다.
+      </p>
+
+      <div class="hero-tags" aria-label="관심 키워드">
+        <span>Vibe Coding</span>
+        <span>AI Tools</span>
+        <span>Web Portfolio</span>
+      </div>
+
+      <div class="hero-actions">
+        <a class="primary-button" href="#about">저를 소개할게요</a>
+        <button class="secondary-button" id="themeButton" type="button">다크 모드</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="section-label">About Me</p>
+        <h2>내 소개</h2>
+      </div>
+
+      <div class="about-card">
+        <!-- 여기에 본인의 자세한 소개글을 적으세요. -->
+        <p>
+          저는 쿼카브로라는 이름으로 웹사이트 만들기와 AI 도구 활용을 즐기는 바이브코더입니다.
+          개인정보는 필요한 만큼만 공개하면서, 재미있는 아이디어를 빠르게 화면으로 만들어 봅니다.
+        </p>
+        <p>
+          KBO와 SSG 랜더스를 좋아하고, 일상에서 떠오른 생각을 간단한 웹페이지로 표현하는 것을 좋아합니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="favorites">
+      <div class="section-heading">
+        <p class="section-label">Favorites</p>
+        <h2>좋아하는 것</h2>
+      </div>
+
+      <div class="favorite-grid">
+        <!--
+          좋아하는 것을 추가하고 싶다면 아래 article 하나를 복사해서 붙여 넣으세요.
+          아이콘은 이모지로 쉽게 바꿀 수 있습니다.
+        -->
+        <article class="favorite-card">
+          <span class="favorite-icon" aria-hidden="true">⚾</span>
+          <h3>KBO</h3>
+          <p>경기 흐름을 따라가며 응원하고 기록을 살펴보는 시간을 좋아합니다.</p>
+        </article>
+
+        <article class="favorite-card">
+          <span class="favorite-icon" aria-hidden="true">🛡️</span>
+          <h3>SSG 랜더스</h3>
+          <p>좋아하는 팀을 응원하면서 야구의 재미를 더 크게 느낍니다.</p>
+        </article>
+
+        <article class="favorite-card">
+          <span class="favorite-icon" aria-hidden="true">🤖</span>
+          <h3>AI 도구</h3>
+          <p>아이디어 정리, 글쓰기, 코딩 연습에 AI 도구를 활용해 보는 것을 좋아합니다.</p>
+        </article>
+
+        <article class="favorite-card">
+          <span class="favorite-icon" aria-hidden="true">💻</span>
+          <h3>웹사이트 만들기</h3>
+          <p>작은 코드를 작성해서 화면이 바뀌는 과정을 보는 것이 재미있습니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card">
+        <p class="section-label">Contact</p>
+        <h2>연락하고 싶다면?</h2>
+        <p>
+          개인 연락처는 웹사이트에 직접 공개하지 않았습니다. 필요한 경우 아래 버튼으로
+          문의 안내를 확인해 주세요.
+        </p>
+
+        <!-- 이메일 주소를 연결하고 싶다면 href를 예: mailto:hello@example.com 으로 바꾸세요. -->
+        <button class="primary-button" id="contactButton" type="button">문의하기</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 쿼카브로의 자기소개 웹사이트</p>
+    <a href="#top">맨 위로 가기</a>
+  </footer>
+
+  <!-- script.js 파일을 연결합니다. 버튼 동작을 바꾸고 싶을 때는 script.js를 수정하세요. -->
+  <script src="script.js"></script>
+</body>
+</html>
