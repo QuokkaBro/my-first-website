@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나의 첫 자기소개 웹사이트</title>
+
+  <!-- style.css 파일을 연결합니다. 디자인을 바꾸고 싶을 때는 style.css를 수정하세요. -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--
+    초보자 수정 안내:
+    1. 이름, 소개글, 좋아하는 것, 연락처는 이 index.html에서 바꿀 수 있습니다.
+    2. 색상과 전체 디자인은 style.css 위쪽의 :root 부분에서 쉽게 바꿀 수 있습니다.
+    3. 버튼 클릭 메시지는 script.js 위쪽에서 바꿀 수 있습니다.
+  -->
+
+  <header class="hero" id="top">
+    <nav class="navbar" aria-label="주요 메뉴">
+      <a class="logo" href="#top">My Profile</a>
+      <div class="nav-links">
+        <a href="#about">소개</a>
+        <a href="#favorites">좋아하는 것</a>
+        <a href="#contact">연락처</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <!-- 여기에 본인의 이름이나 닉네임을 적으세요. -->
+      <p class="eyebrow">안녕하세요!</p>
+      <h1>저는 <span>홍길동</span>입니다.</h1>
+
+      <!-- 여기에 첫 화면에 보여줄 짧은 소개글을 적으세요. -->
+      <p class="hero-description">
+        HTML, CSS, JavaScript를 배우며 나만의 웹사이트를 만들어 가는 초보 개발자입니다.
+      </p>
+
+      <div class="hero-actions">
+        <a class="primary-button" href="#about">저를 소개할게요</a>
+        <button class="secondary-button" id="themeButton" type="button">다크 모드</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="section-label">About Me</p>
+        <h2>내 소개</h2>
+      </div>
+
+      <div class="about-card">
+        <!-- 여기에 본인의 자세한 소개글을 적으세요. -->
+        <p>
+          저는 웹 개발을 처음 배우고 있습니다. 작은 화면을 직접 만들고 꾸미면서,
+          사용자가 보기 편한 웹사이트를 만드는 방법을 차근차근 익히고 있습니다.
+        </p>
+        <p>
+          지금은 HTML로 구조를 만들고, CSS로 디자인을 입히고, JavaScript로 간단한 동작을
+          추가하는 연습을 하고 있습니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="favorites">
+      <div class="section-heading">
+        <p class="section-label">Favorites</p>
+        <h2>좋아하는 것</h2>
+      </div>
+
+      <div class="favorite-grid">
+        <!--
+          좋아하는 것을 추가하고 싶다면 아래 article 하나를 복사해서 붙여 넣으세요.
+          아이콘은 이모지로 쉽게 바꿀 수 있습니다.
+        -->
+        <article class="favorite-card">
+          <span class="favorite-icon" aria-hidden="true">🎧</span>
+          <h3>음악 듣기</h3>
+          <p>집중하거나 쉬고 싶을 때 음악을 들으며 기분을 전환합니다.</p>
+        </article>
+
+        <article class="favorite-card">
+          <span class="favorite-icon" aria-hidden="true">☕</span>
+          <h3>커피</h3>
+          <p>따뜻한 커피 한 잔과 함께 새로운 아이디어를 떠올리는 시간을 좋아합니다.</p>
+        </article>
+
+        <article class="favorite-card">
+          <span class="favorite-icon" aria-hidden="true">💻</span>
+          <h3>웹 만들기</h3>
+          <p>작은 코드를 작성해서 화면이 바뀌는 과정을 보는 것이 재미있습니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-card">
+        <p class="section-label">Contact</p>
+        <h2>연락하고 싶다면?</h2>
+        <p>
+          아래 버튼을 눌러 연락처 안내 메시지를 확인해 보세요. 나중에 실제 이메일이나
+          GitHub 주소로 바꿀 수 있습니다.
+        </p>
+
+        <!-- 이메일 주소를 연결하고 싶다면 href를 예: mailto:hello@example.com 으로 바꾸세요. -->
+        <button class="primary-button" id="contactButton" type="button">연락처 보기</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 나의 첫 자기소개 웹사이트</p>
+    <a href="#top">맨 위로 가기</a>
+  </footer>
+
+  <!-- script.js 파일을 연결합니다. 버튼 동작을 바꾸고 싶을 때는 script.js를 수정하세요. -->
+  <script src="script.js"></script>
+</body>
+</html>
