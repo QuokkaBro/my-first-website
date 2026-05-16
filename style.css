@@ -67,17 +67,18 @@ a {
 
 .hero {
   position: relative;
-  min-height: 88vh;
-  padding: 18px 24px 54px;
+  min-height: clamp(560px, 72vh, 680px);
+  padding: 16px 24px 36px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   isolation: isolate;
 }
 
 .hero::before {
   content: "";
   position: absolute;
-  inset: 92px 50% auto auto;
+  inset: 72px 50% auto auto;
   width: 260px;
   height: 260px;
   border-radius: 999px;
@@ -133,8 +134,8 @@ body.dark-mode .navbar {
 
 .hero-content {
   width: min(860px, 100%);
-  margin: clamp(52px, 9vh, 92px) auto 0;
-  padding: clamp(28px, 5vw, 56px) 0 34px;
+  margin: clamp(24px, 5vh, 46px) auto 0;
+  padding: clamp(14px, 3vw, 30px) 0 28px;
   text-align: center;
 }
 
@@ -399,8 +400,8 @@ body.dark-mode .contact-card {
   }
 
   .hero-content {
-    margin-top: 44px;
-    padding-bottom: 44px;
+    margin-top: 32px;
+    padding-bottom: 36px;
   }
 
   .section {
@@ -411,7 +412,7 @@ body.dark-mode .contact-card {
 /* 스마트폰 화면에서는 메뉴와 카드가 세로로 보기 좋게 정렬됩니다. */
 @media (max-width: 760px) {
   .hero {
-    padding: 14px 16px 42px;
+    padding: 16px 16px 46px;
   }
 
   .hero::before {
@@ -442,8 +443,8 @@ body.dark-mode .contact-card {
   }
 
   .hero-content {
-    margin-top: 34px;
-    padding: 26px 0 34px;
+    margin-top: 28px;
+    padding: 24px 0 36px;
   }
 
   h1 {
